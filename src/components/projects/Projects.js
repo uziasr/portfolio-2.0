@@ -1,28 +1,21 @@
 import React from 'react';
-import work from '../../data/work'
 
-const Projects = () => {
-  console.log(work)
+
+const Projects = ({ projects }) => {
+
     return (
-      // <div>
-      //   {work.map(job=>(
-      //     <>
-      //       <p>{job.name}</p>
-      //     </>
-      //   ))}
-      // </div>
     <div className="twelve columns collapsed">
       <h1>Check Out Some of My Works.</h1>
       {/* portfolio-wrapper */}
       <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
         <div className="columns portfolio-item">
           <div className="item-wrap">
-            <a href="#modal-01" title>
-              <img alt="" src="images/portfolio/coffee.jpg" />
+            <a href={`#modal-0${1}`} title>
+              <img alt="" src={ projects[0].img }/>
               <div className="overlay">
                 <div className="portfolio-item-meta">
-                  <h5>Coffee</h5>
-                  <p>Illustrration</p>
+                  <h5>{projects[0].name}</h5>
+                  <p>{ projects[0].primaryTag }</p>
                 </div>
               </div>
               <div className="link-icon"><i className="icon-plus" /></div>

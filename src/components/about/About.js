@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, BrowserRouter as Router } from 'react-router-dom'
 
 const About = () => {
   return (
@@ -20,17 +21,16 @@ const About = () => {
           <div className="columns contact-details">
             <h2>Contact Details</h2>
             <p className="address">
-              <span>Jonathan Doe</span><br />
-              <span>1600 Amphitheatre Parkway<br />
-                Mountain View, CA 94043 US
+              <span>Uzias Rivera</span><br />
+              <span>Los Angeles, CA
               </span><br />
-              <span>(123)456-7890</span><br />
-              <span>anyone@website.com</span>
+              {/* <span>(123)456-7890</span><br /> */}
+              <span>uziasrivera@gmail.com</span>
             </p>
           </div>
           <div className="columns download">
             <p>
-              <a href="#" className="button"><i className="fa fa-download" />Download Resume</a>
+              <Router><Link target="_blank" className="button" to="/resume.pdf" download><i className="fa fa-download" />Download Resume</Link></Router>
             </p>
           </div>
         </div> {/* end row */}

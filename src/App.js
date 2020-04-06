@@ -7,10 +7,10 @@ import WorkList from '../src/components/bodySections/WorkList'
 import Skills from '../src/components/bodySections/Skills'
 import Projects from '../src/components/projects/Projects'
 import ProjectDescription from '../src/components/projects/ProjectDescription'
-import Education from '../src/components/bodySections/Education'
+import Education from './components/bodySections/EducationList'
 import Contact from '../src/components/contact/Contact'
 import Footer from '../src/components/footer/Footer'
-import { jobs, skills, education } from './data/data'
+import { jobs, skills, education, projects } from './data/data'
 
 
 
@@ -22,12 +22,12 @@ function App() {
       <section id='resume'>
         <WorkList jobs={jobs} />
         <Skills/>  
-        <Education/>                    
+        <Education education={education}/>                    
       </section>
       <section id='portfolio'>
         <div className='row'>
-          <Projects/>
-          <ProjectDescription/>
+          <Projects projects={projects}/>
+          <ProjectDescription projects={projects}/>
         </div>
       </section>
       <Contact/>

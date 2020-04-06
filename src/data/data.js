@@ -35,3 +35,21 @@ export const education = [
         date:"December 2018",
     }
 ]
+
+export const projects = [
+    {
+        name:"Kickstarter Success",
+        primaryTag: "Front End",
+        description:"An app that calculates the likelihood of success for a kickstarter post.",
+        img:"images/ks.PNG",
+        src:"https://kickstart-success.netlify.com/",
+        tags:"React Redux"
+    },
+    // {
+    //     name:"",
+    //     description:"",
+    //     img:"",
+    //     src:"",
+    //     tags:""
+    // },
+]
