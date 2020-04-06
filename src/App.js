@@ -1,25 +1,38 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from '../src/header/Header'
+import About from '../src/components/about/About'
+import WorkList from '../src/components/bodySections/WorkList'
+import Skills from '../src/components/bodySections/Skills'
+import Projects from '../src/components/projects/Projects'
+import ProjectDescription from '../src/components/projects/ProjectDescription'
+import Education from '../src/components/bodySections/Education'
+import Contact from '../src/components/contact/Contact'
+import Footer from '../src/components/footer/Footer'
+import { jobs, skills, education } from './data/data'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <About />
+      <section id='resume'>
+        <WorkList jobs={jobs} />
+        <Skills/>  
+        <Education/>                    
+      </section>
+      <section id='portfolio'>
+        <div className='row'>
+          <Projects/>
+          <ProjectDescription/>
+        </div>
+      </section>
+      <Contact/>
+      <Footer/> 
+    </>
   );
 }
 
