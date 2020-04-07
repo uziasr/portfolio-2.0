@@ -1,17 +1,17 @@
 import React from 'react';
 
-const ProjectDescription = () => {
+const ProjectDescription = ({ projects }) => {
     return (
         <div>
-  <div id="modal-01" className="popup-modal mfp-hide">
-    <img className="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
+  <div id="modal-1" className="popup-modal mfp-hide">
+    <img className="scale-with-grid" src={ projects[0].img } alt="" />
     <div className="description-box">
-      <h4>Coffee Cup</h4>
-      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-      <span className="categories"><i className="fa fa-tag" />Branding, Webdesign</span>
+      <h4>{ projects[0].name }</h4>
+      <p>{ projects[0].description }</p>
+      <span className="categories"><i className="fa fa-tag" />{projects[0].tags}</span>
     </div>
     <div className="link-box">
-      <a href="http://www.behance.net">Details</a>
+      <a href={ projects[0].src }>Details</a>
       <a className="popup-modal-dismiss">Close</a>
     </div>
   </div>{/* modal-01 End */}

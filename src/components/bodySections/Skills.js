@@ -1,4 +1,20 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPython, faJs, faHtml5, faAngular, faGit, faGithub, faCss3, faReact } from '@fortawesome/free-brands-svg-icons'
+
+const skillsStyles = {
+    display:'flex',
+    alignContent:'center',
+    justifyContent:'center',
+    alignItems:'center',
+    margin: '4% auto',
+    flexWrap: 'wrap'
+}
+
+const avatarStyles = {
+    color:"#2B2B2B",
+    padding: '2%'
+}
 
 const Skills = () => {
     return (
@@ -7,27 +23,18 @@ const Skills = () => {
                 <h1><span>Skills</span></h1>
             </div>
             <div className="nine columns main-col">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                  eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                  voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                  voluptatem sequi nesciunt.
-                </p>
-                <div>
-                <i class="fab fa-python"></i>
+                <div style={skillsStyles}>
+                    <FontAwesomeIcon style={avatarStyles} icon={faJs} size="10x"/>
+                    <FontAwesomeIcon style={avatarStyles} icon={faHtml5} size="10x"/>
+                    <FontAwesomeIcon style={avatarStyles} icon={faCss3} size="10x"/>
+                    <FontAwesomeIcon style={avatarStyles} icon={faReact} size="10x"/>
+                    <FontAwesomeIcon style={avatarStyles} icon={faAngular} size="10x"/>
+                    <FontAwesomeIcon style={avatarStyles} icon={faPython} size="10x"/>
+                    <FontAwesomeIcon style={avatarStyles} icon={faGit} size="10x"/>
+                    <FontAwesomeIcon style={avatarStyles} icon={faGithub} size="10x"/>
                 </div>
-                {/* <div className="bars">
-                    <ul className="skills">
-                        <li><span className="bar-expand photoshop" /><em>Photoshop</em></li>
-                        <li><span className="bar-expand illustrator" /><em>Illustrator</em></li>
-                        <li><span className="bar-expand wordpress" /><em>Wordpress</em></li>
-                        <li><span className="bar-expand css" /><em>CSS</em></li>
-                        <li><span className="bar-expand html5" /><em>HTML5</em></li>
-                        <li><span className="bar-expand jquery" /><em>jQuery</em></li>
-                    </ul>
-                </div>end skill-bars */}
-            </div> {/* main-col end */}
-        </div>
-
+            </div>
+            </div>
     );
 };
 

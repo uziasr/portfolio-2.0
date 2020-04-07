@@ -5,8 +5,8 @@ import Header from '../src/header/Header'
 import About from '../src/components/about/About'
 import WorkList from '../src/components/bodySections/WorkList'
 import Skills from '../src/components/bodySections/Skills'
-import Projects from '../src/components/projects/Projects'
-import ProjectDescription from '../src/components/projects/ProjectDescription'
+import Projects from './components/projects/ProjectsList'
+import ProjectDescription from './components/projects/ProjectDescriptionList'
 import Education from './components/bodySections/EducationList'
 import Contact from '../src/components/contact/Contact'
 import Footer from '../src/components/footer/Footer'
@@ -20,13 +20,13 @@ function App() {
       <Header />
       <About />
       <section id='resume'>
-        <WorkList jobs={jobs} />
-        <Skills/>  
-        <Education education={education}/>                    
+        <WorkList jobs={jobs} />  
+        <Education education={education}/>
+        <Skills/>                    
       </section>
       <section id='portfolio'>
         <div className='row'>
-          <Projects projects={projects}/>
+          <Projects projects={projects}/>k
           <ProjectDescription projects={projects}/>
         </div>
       </section>
