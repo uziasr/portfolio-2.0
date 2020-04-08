@@ -10,8 +10,7 @@ import ProjectDescription from './components/projects/ProjectDescriptionList'
 import Education from './components/bodySections/EducationList'
 import Contact from '../src/components/contact/Contact'
 import Footer from '../src/components/footer/Footer'
-import { jobs, skills, education, projects } from './data/data'
-import GithubCalendar from '@axetroy/react-github-calendar';
+import { jobs, education, projects } from './data/data'
 
 
 function App() {
@@ -29,10 +28,6 @@ function App() {
           <Projects projects={projects}/>
           <ProjectDescription projects={projects}/>
         </div>
-        <div><GithubCalendar name="axetroy" 
-        fontSize={12}
-        blockSize={10}
-        blockMargin={4}/></div>
       </section>
       <Contact/>
       <Footer/> 
