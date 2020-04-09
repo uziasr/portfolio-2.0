@@ -1,42 +1,95 @@
-import React from 'react';
+import React, { useState } from 'react';
+import * as yup from 'yup'
+
+const schema = yup.object().shape({
+    name: yup.string().required(),
+    email: yup.string().email().required(),
+    subject: yup.string().required(),
+    message: yup.string().required()
+})
+
+const errorColor = '#F06000'
 
 const Contact = () => {
+
+    const [message, setMessage] = useState({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+    })
+
+    const [validationErrors, setErrors] = useState({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+    })
+    
+    const changeHandler = e =>{
+        setMessage({...message,
+        [e.target.name]: e.target.value
+        })
+        console.log(message)
+    }
+    
+    const onSubmit = (e) => {
+        setErrors({})
+        console.log("this is being submitted")
+        e.preventDefault()
+        schema.validate(message, {abortEarly:false})
+        .then(re=>console.log("did this pass? ", re))
+        .catch(err=>{
+            console.log("this is an error", err)
+            setErrors((state) => {
+                const errorObj = {}
+                err.errors.forEach(error=>{
+                    const key = error.split(' ')[0]
+                    console.log(key)
+
+                   errorObj[key] = error 
+                })
+                return {...state, ...errorObj}
+            })
+        },)
+        console.log(validationErrors)
+    } 
+
     return (
         <section id="contact">
             <div className="row section-head">
                 <div className="two columns header-col">
                     <h1><span>Get In Touch.</span></h1>
                 </div>
-                <div className="ten columns">
-                    <p className="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                      eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                      voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-    </p>
-                </div>
             </div>
             <div className="row">
                 <div className="eight columns">
                     {/* form */}
-                    <form action method="post" id="contactForm" name="contactForm">
+                    {/* action method="post" id="contactForm" */}
+                    <form name="contactForm" netlify>
                         <fieldset>
                             <div>
                                 <label htmlFor="contactName">Name <span className="required">*</span></label>
-                                <input type="text" defaultValue size={35} id="contactName" name="contactName" />
+                                <input type="text" onChange={e=> changeHandler(e)} name="name" size={35} id="contactName" />
+                                {validationErrors.name ? <p style={{color:errorColor}}>{validationErrors.name}</p> : null}
                             </div>
                             <div>
                                 <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-                                <input type="text" defaultValue size={35} id="contactEmail" name="contactEmail" />
+                                <input type="text" onChange={e=> changeHandler(e)} name="email" size={35} id="contactEmail" />
+                                {validationErrors.email ? <p style={{color:errorColor}}>{validationErrors.email}</p> : null}
                             </div>
                             <div>
                                 <label htmlFor="contactSubject">Subject</label>
-                                <input type="text" defaultValue size={35} id="contactSubject" name="contactSubject" />
+                                <input type="text" onChange={e=> changeHandler(e)} name="subject" size={35} id="contactSubject" />
+                                {validationErrors.subject ? <p style={{color:errorColor}}>{validationErrors.subject}</p> : null}
                             </div>
                             <div>
                                 <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                                <textarea cols={50} rows={15} id="contactMessage" name="contactMessage" defaultValue={""} />
+                                <textarea cols={50} onChange={e=> changeHandler(e)} name="message" rows={15} id="contactMessage" defaultValue={""} />
+                                {validationErrors.message ? <p style={{color:errorColor}}>{validationErrors.message}</p> : null}
                             </div>
                             <div>
-                                <button className="submit">Submit</button>
+                                <button className="submit" onClick={e=>onSubmit(e)}>Submit</button>
                                 <span id="image-loader">
                                     <img alt="" src="images/loader.gif" />
                                 </span>
@@ -51,15 +104,6 @@ const Contact = () => {
                     </div>
                 </div>
                 <aside className="four columns footer-widgets">
-                    <div className="widget widget_contact">
-                        <h4>Address and Phone</h4>
-                        <p className="address">
-                            Jonathan Doe<br />
-                            1600 Amphitheatre Parkway <br />
-                            Mountain View, CA 94043 US<br />
-                            <span>(123) 456-7890</span>
-                        </p>
-                    </div>
                 </aside>
             </div>
         </section>

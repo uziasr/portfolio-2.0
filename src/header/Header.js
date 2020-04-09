@@ -23,13 +23,8 @@ export default class NewComponent extends React.Component{
                 and learn more <a className="smoothscroll" href="#about">about me</a>.</h3>
               <hr />
               <ul className="social">
-                {/* <li><a href="#"><i className="fa fa-facebook" /></a></li>
-                <li><a href="#"><i className="fa fa-twitter" /></a></li>
-                <li><a href="#"><i className="fa fa-google-plus" /></a></li> */}
                 <li><a href="https://github.com/uziasr"><i className="fa fa-github" /></a></li>
                 <li><a href="https://www.linkedin.com/in/uziasrivera/"><i className="fa fa-linkedin" /></a></li>
-                {/* <li><a href="#"><i className="fa fa-dribbble" /></a></li>
-                <li><a href="#"><i className="fa fa-skype" /></a></li> */}
               </ul>
             </div>
           </div>
