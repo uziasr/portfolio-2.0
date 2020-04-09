@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import * as yup from 'yup'
+import axios from 'axios'
 
 const schema = yup.object().shape({
     name: yup.string().required(),
@@ -38,21 +39,19 @@ const Contact = () => {
         console.log("this is being submitted")
         e.preventDefault()
         schema.validate(message, {abortEarly:false})
-        .then(re=>console.log("did this pass? ", re))
+        .then(re=>{
+            axios.post('https://email-sender-pro.herokuapp.com/', message)
+        })
         .catch(err=>{
-            console.log("this is an error", err)
             setErrors((state) => {
                 const errorObj = {}
                 err.errors.forEach(error=>{
                     const key = error.split(' ')[0]
-                    console.log(key)
-
                    errorObj[key] = error 
                 })
                 return {...state, ...errorObj}
             })
         },)
-        console.log(validationErrors)
     } 
 
     return (
