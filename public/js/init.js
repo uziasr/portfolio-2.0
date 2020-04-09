@@ -152,7 +152,7 @@
       $.ajax({
 
 	      type: "POST",
-	      url: "inc/sendEmail.php",
+	      url: "https://email-sender-pro.herokuapp.com/",
 	      data: data,
 	      success: function(msg) {
 
