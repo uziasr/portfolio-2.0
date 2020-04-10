@@ -25,8 +25,9 @@ const About = () => {
             </p>
           </div>
           <div className="columns download">
+            <p>View Resume</p>
             <p>
-              <Router><Link target="_blank" className="button" to="/resume.pdf" download><i className="fa fa-download" />Download Resume</Link></Router>
+              <Router><Link target="_blank" className="button" to="/resume-uzias.pdf" download><i className="fa fa-download" />Download Resume</Link></Router>
             </p>
           </div>
         </div> {/* end row */}

@@ -542,6 +542,8 @@ ul#nav li.current a { color: #F06000; }
 }
 .popup-modal .link-box {
    padding: 18px 36px;
+   display: flex;
+   justify-content: space-evenly; 
    background: #111;
    text-align: left;
 }
@@ -553,7 +555,7 @@ ul#nav li.current a { color: #F06000; }
    cursor: pointer;
 }
 .popup-modal a:hover {	color: #00CCCC; }
-.popup-modal a.popup-modal-dismiss { margin-left: 24px; }
+.popup-modal a.popup-modal-dismiss .repo-link{  margin-left: 24px; }
 
 
 /* fadein/fadeout effect for modal popup
@@ -878,7 +880,7 @@ call-to-action .button {
 	color: #11ABB0;
 	font-size: 13px;
 }
-#message-warning, .message-success {
+.message-warning, .message-success {
    display: none;
 	background: #0F0F0F;
 	padding: 24px 24px;
@@ -886,10 +888,10 @@ call-to-action .button {
    width: 65%;
    margin-left: 26%;
 }
-#message-warning { color: #D72828; }
+.message-warning { color: #D72828; }
 .message-success { color: #11ABB0; }
 
-#message-warning i,
+.message-warning i,
 .message-success i {
    margin-right: 10px;
 }

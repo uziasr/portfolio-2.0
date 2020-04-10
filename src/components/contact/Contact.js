@@ -117,7 +117,7 @@ const Contact = () => {
                                 <i className="fa fa-check" />Your message was sent, thank you!<br />
                             </div>
                             :
-                            <div style={{ display: "inlineBlock" }} id="message-warning"> Error boy</div>
+                            <div style={{ display: "inlineBlock" }} className="message-warning"> Error boy</div>
                     }
                 </div>
                 <aside className="four columns footer-widgets">

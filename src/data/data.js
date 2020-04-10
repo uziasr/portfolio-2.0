@@ -38,12 +38,35 @@ export const education = [
 
 export const projects = [
     {
+        name:"Tabless Thursday",
+        primaryTag: "UI",
+        description:"An app that saves tabs and does away with the clutter and memory usage that traditional tabs bring",
+        img:"images/projects/tablessCard.PNG",
+        descriptionImg:"images/projects/tabless.PNG",
+        src:"https://tabless-project.netlify.com/",
+        tags:"HTML CSS LESS",
+        gh: "https://github.com/Tabless-Thursday1/Tabless-UI-3"
+    },
+
+    {
         name:"Kickstarter Success",
-        primaryTag: "Front End",
+        primaryTag: "Front End React",
         description:"An app that calculates the likelihood of success for a kickstarter post.",
-        img:"images/ks.PNG",
+        img:"images/projects/ksCard.PNG",
+        descriptionImg:"images/projects/ks.PNG",
         src:"https://kickstart-success.netlify.com/",
-        tags:"React Redux"
+        tags:"React Redux",
+        gh: "https://github.com/Kickstarter-Success/Frontend"
+    },
+    {
+        name:"Heat Unit",
+        primaryTag: "Back End Django",
+        description:"A game where as a chile pepper, you battle the spiciest peppers with goal to be spiciest of them all",
+        img:"images/projects/spicyCard.PNG",
+        descriptionImg:"images/projects/spicy.PNG",
+        src:"https://front-end.bayronpuac.now.sh/",
+        tags:"Python Django Redux",
+        gh: "https://github.com/CS26-Heat-Unit"
     },
     // {
     //     name:"",
