@@ -37,18 +37,15 @@ const Contact = () => {
             ...message,
             [e.target.name]: e.target.value
         })
-        console.log(message)
     }
 
     const onSubmit = (e) => {
         setErrors({})
-        console.log("this is being submitted")
         e.preventDefault()
         schema.validate(message, { abortEarly: false })
             .then(re => {
                 axios.post('https://email-sender-pro.herokuapp.com/', message)
                     .then(res => {
-                        console.log("this email has been successfully sent", res)
                         isSuccessful({
                             submit: true,
                             sent: true
@@ -74,6 +71,13 @@ const Contact = () => {
                 <div className="two columns header-col">
                     <h1><span>Get In Touch.</span></h1>
                 </div>
+                <div class="ten columns">
+
+                  <p class="lead">
+                      Interested in starting a project? Let's work together!
+                  </p>
+
+            </div>
             </div>
             <div className="row">
                 <div className="eight columns">
