@@ -3,7 +3,7 @@ export const jobs = [
        company:"Lambda",
        title:"Team Lead",
        date:"February 2020 - Current",
-       description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium."
+       description:"Managed a team of seven students, emulating a real work environment using the agile methodology. Reviewed projects in one on one meetings and supplied students with technical support and provided additional resources to reassure their understanding of the concepts."
 
     },
 
@@ -68,6 +68,16 @@ export const projects = [
         tags:"Python Django Redux",
         gh: "https://github.com/CS26-Heat-Unit"
     },
+    {
+        name:"Form Critic",
+        primaryTag: "FullStack",
+        description:"A platform where people can get their exercise form checked by certified personal trainers and by the community as a whole.",
+        img:"images/projects/fromCriticCard.PNG",
+        descriptionImg:"images/projects/formCritic.png",
+        src:"https://form-critic.uziasrivera.now.sh/",
+        tags:"React Redux Node.js Express Knex",
+        gh: "https://github.com/uziasr/frontend/tree/master"
+    }
     // {
     //     name:"",
     //     description:"",
