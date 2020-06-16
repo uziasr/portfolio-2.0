@@ -5,7 +5,7 @@ const ProjectDescription = ({ projects }) => {
         <div>
   {projects.map((project, index)=>{
   
-  return <div id={`modal-${index}`} className="popup-modal mfp-hide">
+  return <div key={index} id={`modal-${index}`} className="popup-modal mfp-hide">
     <img className="scale-with-grid" src={ project.descriptionImg } alt="" />
     <div className="description-box">
       <h4>{ project.name }</h4>

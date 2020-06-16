@@ -71,9 +71,9 @@ const Contact = () => {
                 <div className="two columns header-col">
                     <h1><span>Get In Touch.</span></h1>
                 </div>
-                <div class="ten columns">
+                <div className="ten columns">
 
-                  <p class="lead">
+                  <p className="lead">
                       Interested in starting a project? Let's work together!
                   </p>
 
@@ -83,7 +83,7 @@ const Contact = () => {
                 <div className="eight columns">
                     {/* form */}
                     {/* action method="post" id="contactForm" */}
-                    <form name="contactForm" netlify>
+                    <form name="contactForm">
                         <fieldset>
                             <div>
                                 <label htmlFor="contactName">Name <span className="required">*</span></label>

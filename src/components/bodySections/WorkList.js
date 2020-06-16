@@ -1,6 +1,5 @@
 import React from 'react';
 import Work from './Work'
-import { jobs } from '../../data/data';
 
 const WorkList = ({ jobs }) => {
     return (
@@ -9,7 +8,7 @@ const WorkList = ({ jobs }) => {
     <h1><span>Work</span></h1>
   </div>
   <div className="nine columns main-col">
-    {jobs.map(job=> <Work job={job}/>)}
+    {jobs.map((job, index)=> <Work key={index} job={job}/>)}
   </div> {/* main-col end */}
 </div>  
     );

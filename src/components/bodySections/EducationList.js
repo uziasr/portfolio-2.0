@@ -8,7 +8,7 @@ const EducationList = ({ education }) => {
     <h1><span>Education</span></h1>
   </div>
   <div className="nine columns main-col">
-      {education.map(edu=> <Education edu={edu}/>)}
+      {education.map((edu, index)=> <Education key={index} edu={edu}/>)}
   </div> {/* main-col end */}
 </div> 
     );
