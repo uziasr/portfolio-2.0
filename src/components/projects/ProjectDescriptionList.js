@@ -14,7 +14,7 @@ const ProjectDescription = ({ projects }) => {
     </div>
     <div className="link-box">
       <a href={ project.src }>Site </a>
-      <a className="repo-link" href={ project.gh ? project.gh : null  }> Repo </a>
+      <a className="repo-link" href={ project.gh }> Repo </a>
       <a className="popup-modal-dismiss"> Close</a>
     </div>
   </div>

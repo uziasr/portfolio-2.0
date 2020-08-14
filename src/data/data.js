@@ -95,7 +95,7 @@ export const projects = [
         descriptionImg: "images/projects/connectocCard.png",
         src: "https://www.connectourkids.org/",
         tags: "React Native Redux",
-        gh: "",
+        gh: "https://github.com/",
     },
     // {
     //     name: "",
