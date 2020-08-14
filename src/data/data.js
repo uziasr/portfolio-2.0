@@ -87,20 +87,13 @@ export const projects = [
         tags: "React Redux Node.js Express Knex",
         gh: "https://github.com/uziasr/frontend/tree/master"
     },
-    // {
-    //     name:"",
-    //     description:"",
-    //     img:"",
-    //     src:"",
-    //     tags:""
-    // },
     {
         name: "Connect Our Kids",
         primaryTag: "React Native",
-        description: "fdafdsa",
+        description: "Interned as a react native developer. Developed multiple screens, forms, and styled",
         img: "images/projects/connect.png",
         descriptionImg: "images/projects/connectocCard.png",
-        src: "https://play.google.com/store/apps/details?id=com.connectOurKids",
+        src: "https://www.connectourkids.org/",
         tags: "React Native Redux",
         gh: "",
     },
