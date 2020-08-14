@@ -9,8 +9,8 @@ const Projects = ({ projects }) => {
       {/* portfolio-wrapper */}
       <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
         {projects.map((project,index)=>{
-return <div key ={index} className="columns portfolio-item">
-          <div className="item-wrap">
+return <div key={index} className="columns portfolio-item">
+          <div style={{borderColor: "white", borderWidth: ".5px", borderStyle:"solid"}} className="item-wrap">
             <a href={`#modal-${index}`}>
               <img alt="" src={ project.img }/>
               <div className="overlay">

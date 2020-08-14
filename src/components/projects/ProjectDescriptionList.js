@@ -13,12 +13,11 @@ const ProjectDescription = ({ projects }) => {
       <span className="categories"><i className="fa fa-tag" />{project.tags}</span>
     </div>
     <div className="link-box">
-      <a href={ project.src }>Details </a>
+      <a href={ project.src }>Site </a>
       <a className="repo-link" href={ project.gh }> Repo </a>
       <a className="popup-modal-dismiss"> Close</a>
     </div>
   </div>
-
   })}
 </div>
     
