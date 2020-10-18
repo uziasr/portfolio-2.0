@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Header from '../src/header/Header'
 import About from '../src/components/about/About'
@@ -10,9 +10,16 @@ import Education from './components/bodySections/EducationList'
 import Contact from '../src/components/contact/Contact'
 import Footer from '../src/components/footer/Footer'
 import { jobs, education, projects } from './data/data'
+import Axios from 'axios';
 
 
 function App() {
+
+  useEffect(()=>{
+    // wake up the api
+    Axios.get('https://email-sender-pro.herokuapp.com/').then(res=>null).catch(err=>null)
+  },[])
+  
   return (
     <>
       <Header />
@@ -28,7 +35,7 @@ function App() {
           <ProjectDescription projects={projects}/>
         </div>
       </section>
-      <Contact/>
+      {/* <Contact/> */}
       <Footer/> 
     </>
   );

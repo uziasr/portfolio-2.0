@@ -68,6 +68,16 @@ export const projects = [
         gh: "https://github.com/Kickstarter-Success/Frontend"
     },
     {
+        name: "Checkers Pro",
+        primaryTag: "React",
+        description: "A simple checkers game made entirely with react",
+        img: "images/projects/checkers-pro.png",
+        descriptionImg: "images/projects/checkers-proCard.png",
+        src: "https://checkers-pro.vercel.app/",
+        tags: "React HTML CSS",
+        gh: "https://github.com/uziasr/checkers-pro",
+    },
+    {
         name: "Heat Unit",
         primaryTag: "Back End Django",
         description: "A game where as a chile pepper, you battle the spiciest peppers with goal to be spiciest of them all",
