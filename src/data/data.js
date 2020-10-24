@@ -100,12 +100,22 @@ export const projects = [
     {
         name: "Connect Our Kids",
         primaryTag: "React Native",
-        description: "Interned as a react native developer. Developed multiple screens, forms, and styled",
+        description: "Interned as a react native developer. Developed multiple screens, forms, and styled according to design schematics",
         img: "images/projects/connect.png",
         descriptionImg: "images/projects/connectocCard.png",
         src: "https://www.connectourkids.org/",
         tags: "React Native Redux",
         gh: "https://github.com/",
+    },
+    {
+        name: "Job Board Pro",
+        primaryTag: "React Flask MongoDB BeautifulSoup",
+        description: "A job board application that allows users to save their job applications. They have the ability to categorize the job and update its status. The save job form supports web scrapping of sites like indeed and others list on the page. This site comes packed with visualizations as well.",
+        img: "images/projects/jobBoardPro.png",
+        descriptionImg: "images/projects/jobBoardProCard.png",
+        src: "https://job-board-fe-gf1wxp4vh.vercel.app/",
+        tags: "React  Redux Flask MongoDB BeautifulSoup",
+        gh: "https://github.com/uziasr/job-board-FE",
     },
     // {
     //     name: "",
