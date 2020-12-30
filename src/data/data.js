@@ -117,6 +117,16 @@ export const projects = [
         tags: "React  Redux Flask MongoDB BeautifulSoup",
         gh: "https://github.com/uziasr/job-board-FE",
     },
+    {
+        name: "Free Games TS",
+        primaryTag: "TypeScript React",
+        description: "A list of free games to spend your free time with.",
+        img: "images/projects/FreeGamesTS.JPG",
+        descriptionImg: "images/projects/FreeGamesTSCard.JPG",
+        src: "https://5fdc0a32d6e37200079d64dd--relaxed-gates-cddd8a.netlify.app/",
+        tags: "TypeScript React",
+        gh: "https://github.com/?q=game",
+    }
     // {
     //     name: "",
     //     primaryTag: "",
