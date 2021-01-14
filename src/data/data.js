@@ -126,6 +126,16 @@ export const projects = [
         src: "https://5fdc0a32d6e37200079d64dd--relaxed-gates-cddd8a.netlify.app/",
         tags: "TypeScript React",
         gh: "https://github.com/?q=game",
+    },
+    {
+        name: "The Daily Post",
+        primaryTag: "TypeScript Graphql Cookies",
+        description: "A public forum for civic discussion",
+        img: "images/projects/dailyPostCard.JPG",
+        descriptionImg: "images/projects/dailyPost.JPG",
+        src: "https://daily-post-web.vercel.app/",
+        tags: "Typescript Graphql Cookies Urql",
+        gh: "https://github.com/uziasr/daily_post_api",
     }
     // {
     //     name: "",

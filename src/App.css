@@ -43,3 +43,8 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.portfolio-item .item-wrap {
+  width: 200px;
+  height: 110px;
+}
