@@ -1,8 +1,14 @@
 export const jobs = [
     {
+        company: "Freelance",
+        title: "Freelancer",
+        date:"November 2020 - Current",
+        description:  "Coordinating closely with clients to deliver applications that satisfy their needs. Selected the best technologies to support the product. Developed custom user interfaces on the frontend using React and SCSS."
+    },
+    {
         company: "Lambda",
         title: "Team Lead",
-        date: "February 2020 - Current",
+        date: "February 2020 - June 2020",
         description: "Managed a team of seven students, emulating a real work environment using the agile methodology. Reviewed projects in one on one meetings and supplied students with technical support and provided additional resources to reassure their understanding of the concepts."
 
     },
@@ -129,12 +135,12 @@ export const projects = [
     },
     {
         name: "The Daily Post",
-        primaryTag: "TypeScript Graphql Cookies",
+        primaryTag: "TypeScript Graphql Next.js",
         description: "A public forum for civic discussion",
         img: "images/projects/dailyPostCard.JPG",
         descriptionImg: "images/projects/dailyPost.JPG",
         src: "https://daily-post-web.vercel.app/",
-        tags: "Typescript Graphql Cookies Urql",
+        tags: "Typescript Graphql Next.js Chakra Urql",
         gh: "https://github.com/uziasr/daily_post_api",
     }
     // {

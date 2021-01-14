@@ -29,8 +29,8 @@ const About = () => {
               <Router><Link target="_blank" className="button" to="/resume-uzias.pdf" download><i className="fa fa-download" />Download Resume</Link></Router>
             </p>
           </div>
-        </div> {/* end row */}
-      </div> {/* end .main-col */}
+        </div>
+      </div>
     </div>
   </section>
   );
