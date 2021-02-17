@@ -2,8 +2,8 @@ export const jobs = [
     {
         company: "Freelance",
         title: "Freelancer",
-        date:"November 2020 - Current",
-        description:  "Coordinating closely with clients to deliver applications that satisfy their needs. Selected the best technologies to support the product. Developed custom user interfaces on the frontend using React and SCSS."
+        date: "November 2020 - Current",
+        description: "Coordinating closely with clients to deliver applications that satisfy their needs. Selected the best technologies to support the product. Developed custom user interfaces on the frontend using React and SCSS."
     },
     {
         company: "Lambda",
@@ -117,8 +117,8 @@ export const projects = [
         name: "Job Board Pro",
         primaryTag: "React Flask MongoDB BeautifulSoup",
         description: "A job board application that allows users to save their job applications. They have the ability to categorize the job and update its status. The save job form supports web scrapping of sites like indeed and others list on the page. This site comes packed with visualizations as well.",
-        img: "images/projects/jobBoardPro.png",
-        descriptionImg: "images/projects/jobBoardProCard.png",
+        img: "images/projects/jobBoardPro.JPG",
+        descriptionImg: "images/projects/jobBoardProCard.JPG",
         src: "https://job-board-fe-gf1wxp4vh.vercel.app/",
         tags: "React  Redux Flask MongoDB BeautifulSoup",
         gh: "https://github.com/uziasr/job-board-FE",
@@ -142,7 +142,17 @@ export const projects = [
         src: "https://daily-post-web.vercel.app/",
         tags: "Typescript Graphql Next.js Chakra Urql",
         gh: "https://github.com/uziasr/daily_post_api",
-    }
+    },
+    {
+        name: "The Settlers of Katan",
+        primaryTag: "React JavaScript boardgame.io",
+        description: "A board game like the Settlers of Catan, remote multiplayer feature still in the works",
+        img: "images/projects/Katan.JPG",
+        descriptionImg: "images/projects/KatanCard.JPG",
+        src: "https://settlers.vercel.app/",
+        tags: "React JavaScript boardgame.io",
+        gh: "https://github.com/uziasr/settlers",
+    },
     // {
     //     name: "",
     //     primaryTag: "",
