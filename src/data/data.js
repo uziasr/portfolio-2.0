@@ -153,6 +153,16 @@ export const projects = [
         tags: "React JavaScript boardgame.io",
         gh: "https://github.com/uziasr/settlers",
     },
+    {
+        name: "Paper Trail",
+        primaryTag: "React redux Node.js",
+        description: "An application to collect your train of thoughts. Perfect for recording your research. Chrome extension in the works",
+        img: "images/projects/PaperTrails.JPG",
+        descriptionImg: "images/projects/PaperTrail.JPG",
+        src: "https://paper-trails.vercel.app/",
+        tags: "React redux Node.js",
+        gh: "https://github.com/uziasr/paper_trails",
+    }
     // {
     //     name: "",
     //     primaryTag: "",
