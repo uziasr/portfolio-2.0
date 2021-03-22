@@ -162,6 +162,16 @@ export const projects = [
         src: "https://paper-trails.vercel.app/",
         tags: "React redux Node.js",
         gh: "https://github.com/uziasr/paper_trails",
+    },
+        {
+        name: "Ecommerce",
+        primaryTag: "React Stripe Commerce.js",
+        description: "Simply designed e-commerce web application. Powered by the powerful Commerce.js",
+        img: "images/projects/ecommerceCard.JPG",
+        descriptionImg: "images/projects/ecommerce.JPG",
+        src: "https://6057e26cac3debce02809fd7--pensive-mcnulty-3e0eae.netlify.app/",
+        tags: "React Stripe Commerce.js Material UI",
+        gh: "https://github.com/uziasr/ecommerce_site",
     }
     // {
     //     name: "",
